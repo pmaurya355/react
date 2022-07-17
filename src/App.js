@@ -10,10 +10,11 @@ import SignUp from './components/pages/SignUp';
 
 import Footer from './components/footer/Footer';
 
-function App() {
+function  App() {
+  window.scrollTo(0, 0);
   return (
     <>
-       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap"></link>
+       
       <Router>
       <Navbar />
         <Routes>
@@ -21,7 +22,10 @@ function App() {
           <Route exact path="/" element={<Home />}/>
           <Route exact path="/impetus" element={<Impetus />}/>
           <Route exact path="/whyca" element={<WhyCa/>}/>
+          <Route exact path="/whyca" element={<SignUp />}/>
+          <Route exact path="/whyca" element={<SignUp />}/>
           <Route exact path="/sign-up" element={<SignUp />}/>
+         
         </Routes>
       </Router>
       <Footer />

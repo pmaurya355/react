@@ -1,8 +1,9 @@
 import React from 'react';
 import '../../App.css';
-
+import Counter from '../counter/counter';
 import HeroSection from '../hero-section/HeroSection';
-import AboutUs from '../about-us/AboutUs';
+import AboutUs from '../about-us/aboutus';
+import Testimonials from '../testimonials/testimonials';
 
 function Home () {
   
@@ -11,6 +12,8 @@ function Home () {
         <>
             <HeroSection />
             <AboutUs /> 
+            <Counter/>
+            {/* <Testimonials/> */}
         </>
     )
 }

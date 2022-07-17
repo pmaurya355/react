@@ -1,10 +1,13 @@
 .whyca {
-  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   background: white;
 }
 
 #card:hover {
-   box-shadow: 5px 6px 6px 2px #e9ecef; 
+  box-shadow: 5px 6px 6px 2px #e9ecef;
   color: black;
   width: 90%;
   background: lightgrey;
@@ -19,26 +22,27 @@
   margin: 10px;
 }
 
-#title {
-  font-weight: 300;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
-  font-size: 25px;
+
+
+.grid-container {
+  
+  grid-template-columns: auto auto ;
+  display: grid;
+  column-gap: 15px;
+  row-gap: 10px;
 }
 
-/* #title:hover {
-  font-weight: bold;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: black;
-  font-size: 25px;
-} */
-#whyca{
-  flex-direction: row;
-  flex-flow: row;
-}
+.grid-item {
 
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+  height: 2cm;
+ 
+  line-height: 0.8cm;
+  font-size: 18px;
+  text-align: left;
+}
 
 #text1 {
   margin: 5px;
@@ -49,7 +53,12 @@
   font-weight: 200;
 }
 
-#respons{
+#respons {
+
+  margin: 0 510px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid grey;
+  width: 12cm;
   margin-top: 50x;
   letter-spacing: 0.3cm;
   position: relative;
@@ -58,18 +67,12 @@
   margin: 0 auto;
   text-align: center;
 }
-.respons{
-  padding: 4rem;
+
+.respons {
+  padding: 3rem;
   background: black;
 }
-/* #text1:hover {
-  margin: 5px;
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 16px;
-  color: black;
-  font-weight: 200;
-} */
+
 
 #group {
   max-width: 1120px;
@@ -79,14 +82,14 @@
   flex-flow: row;
   align-self: center;
   align-content: center;
-  gap:0
+  gap: 0
+}
 
-}
-#img{
-  margin-left: 10;
-  align-self: center;
-}
 .hr-lines {
+  margin: 0 510px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid grey;
+  width: 6cm;
   letter-spacing: 0.3cm;
   position: relative;
   max-width: 700px;
@@ -95,55 +98,13 @@
   margin-bottom: 50px;
   text-align: center;
 }
-
-ul.no-bullets {
-  list-style-type: none;
-  display: flex;
-  /* align-items: center; */
-  color: black;
-  line-height: 1cm;
-  
-  margin-bottom: 50px;
-
-}
-
-p{
-  line-height: 1cm;
-  font-size: 20px;
-  font-weight: 100;
-}
-/* .hr-lines:before {
-  content: " ";
-  height: 2px;
-  width: 170px;
-  background: grey;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-} */
-
-/* .hr-lines:after {
-  content: " ";
-  height: 2px;
-  width: 170px;
-  background: grey;
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0;
-} */
-
-
-
-
 .cards__container {
   background: black;
   display: flex;
   flex-flow: row;
   align-items: center;
-   max-width: 1120px;
-  width: 100%; 
+  max-width: 1120px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -151,9 +112,11 @@ p{
   align-self: center;
   margin: 50px 0 50px;
 }
+
 .cards__items {
   margin-bottom: 24px;
 }
+
 .cards__item:hover {
 
   background: lightgrey;
@@ -161,7 +124,7 @@ p{
   display: flex;
   flex: 1;
   margin: 0 1rem;
- 
+
 }
 
 
@@ -171,7 +134,7 @@ p{
   display: flex;
   flex: 1;
   margin: 0 1rem;
- 
+
 }
 
 
@@ -180,7 +143,7 @@ p{
   position: relative;
   width: 100%;
   padding-top: 67%;
- 
+
 }
 
 .fade-img {
@@ -201,19 +164,24 @@ p{
   background-color: #1f98f4;
   box-sizing: border-box;
 }
-li{
-  -webkit-transition: background 2s; /* For Safari 3.0 to 6.0 */
-  transition: background 1s; 
+
+li {
+  -webkit-transition: background 2s;
+  /* For Safari 3.0 to 6.0 */
+  transition: background 1s;
   /* padding: 10; */
   color: white;
 }
-li:hover{
+
+li:hover {
   color: black;
 }
 
 
+
 .cards__item__img {
-  object-fit: scale-down;
+  
+  /* object-fit: scale-down; */
   position: relative;
   top: 0;
   right: 0;
@@ -224,7 +192,7 @@ li:hover{
   max-width: 100%;
   height: 200;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: contain; 
   transition: all 0.2s linear;
 }
 
@@ -235,14 +203,14 @@ li:hover{
   text-align: left;
   font-weight: bold;
   padding: 20px 0 30px;
-} 
+}
 
 .cards__item__text {
   text-align: left;
   font-weight: 100;
   font-size: 15px;
   line-height: 24px;
-} 
+}
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {

@@ -3,80 +3,142 @@ import './WhyCa.css';
 import CardItem from './CardItem';
 import { Row } from 'react-bootstrap';
 import "animate.css/animate.min.css";
+import opp from '../../assets/images/opp.png';
+import comm from '../../assets/images/comm.png';
+import conn from '../../assets/images/connection.png';
+import comp from '../../assets/images/comp.png';
+import pub from '../../assets/images/pub.png';
+import trend from '../../assets/images/trend.png';
+import M1 from '../../assets/images/M1.png';
+import M2 from '../../assets/images/M2.png';
+import M3 from '../../assets/images/M3.png';
+import M4 from '../../assets/images/M4.png';
+
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 function WhyCa() {
     return (
         <>
-        <div className='whyca'>
-            
-            <h1 class="hr-lines">WHY CA?</h1>
-            <div id="whyca">
-          
-<img src={"https://cdn-icons-png.flaticon.com/128/263/263075.png"}></img> 
-<p>Golden opportunity to witness the grandeur of Techkriti in one of the most renowned and prestigious institutions of the country, IIT Kanpur</p> </div>
+       
+            <div className='whyca'>
+            <link rel="stylesheet" href="./WhyCa.css"/> 
+            <AnimationOnScroll
 
-<p>Excellent platform to sharpen your Communication and Technical skills</p>
+animateOnce={true}
+animateIn="animate__fadeIn">
+                <h1 class="hr-lines">WHY CA?</h1>
 
-<p>Be a part of national level event promotion and brand management</p>
+                <div class="grid-container">
 
-<p>Chance to organize National Level Competitions in your college</p>
 
-<p>Form a valuable network with thousands of brilliant like-minded students from all across the country</p>
 
-<p>An easy way to get acquainted with ever-changing trends of the Technical and Entrepreneurial World</p>
+                    <ul class="grid-item"><img
+                        className='cards__item__img'
+                        alt=''
+                        src={opp}
+                        height={50}
+                        width={50}
 
-<p>Opportunity to keep abreast with cutting - edge technologies from IIT Kanpur</p>
+                    />Golden opportunity to witness the splendor of Techkriti at IIT Kanpur, one of the nation's distinguished institutions.</ul>
 
-           
-           
+                    <ul class="grid-item"><img
+                        className='cards__item__img'
+                        alt=''
+                        src={comm}
+                        height={50}
+                        width={50}
+                    />Excellent platform to sharpen your Communication and Technical skills</ul>
+
+                    <ul class="grid-item"><img
+                        className='cards__item__img'
+                        alt=''
+                        src={pub}
+                        height={50}
+                        width={50}
+                    />Be a part of national level event promotion and brand management</ul>
+
+                    <ul class="grid-item"><img
+
+
+                        className='cards__item__img'
+                        alt=''
+                        src={comp}
+                        height={50}
+                        width={50}
+                    />Chance to organize National Level Competitions in your college</ul>
+
+                    <ul class="grid-item"><img
+                        className='cards__item__img'
+                        alt=''
+                        src={conn}
+                        height={50}
+                        width={50}
+                    />Form a valuable network with thousands of brilliant like-minded students from all across the country</ul>
+
+                    <ul class="grid-item"><img
+                        className='cards__item__img'
+                        alt=''
+                        src={trend}
+                        height={50}
+                        width={50}
+                    />An easy way to get acquainted with ever-changing trends of the Technical and Entrepreneurial World</ul>
+
+                </div>
+
+                </AnimationOnScroll>
+
             </div>
+        
+
+            <div className='respons'>
+                <h1 id="respons">RESPONSIBILITIES</h1>
+                <div className='cards__container'>
+                    <div className='cards__wrapper'>
+                        <AnimationOnScroll
+
+                            animateOnce={true}
+                            animateIn="animate__fadeInUp">
+                            <Row id='group'>
 
 
-           <div className='respons'>
-            <h1 id="respons">RESPONSIBILITIES</h1>
-            <div className='cards__container'>
-                <div className='cards__wrapper'>
-                    <AnimationOnScroll
+                                <CardItem
+                                    src={M2}
+                                    title="Coordination"
+                                    text='CAs are responsible for collaborating with the numerous participating colleges.
+                                    CAs arrange workshops and activities in their respective colleges with the aid of Techkriti.
+                                   
+                                    '
+                                />
 
-                        animateOnce={true}
-                        animateIn="animate__fadeIn">
-                        <Row id='group'>
-
-                      
-                            <CardItem
-                                src="https://img.freepik.com/free-vector/business-team-putting-together-jigsaw-puzzle-isolated-flat-vector-illustration-cartoon-partners-working-connection-teamwork-partnership-cooperation-concept_74855-9814.jpg?t=st=1657235387~exp=1657235987~hmac=acc9bffa81082967b5ddde8d4fa82d300c3504d969dda228878e2a4618539ab6&w=826"
-                                title="Coordination"
-                                text=' Coordinating with the various participating colleges.
-              With the help of Techkriti, CAs organize workshops and events in their respective colleges'
-                            />
-
-                            <CardItem
-                                src='https://img.freepik.com/free-vector/digital-marketing-team-with-laptops-light-bulb-marketing-team-metrics-marketing-team-lead-responsibilities-concept-white-background_335657-2022.jpg?t=st=1657236294~exp=1657236894~hmac=c588e1d5243ef225dd5ccbf6de2b7062fc1794088096625a46778ba987b1b945&w=900'
-                                title="College Publicity"
-                                text=" A campus ambassador also helps in publicising Techkriti, and ensuring participation of the respective campus community."
+                                <CardItem
+                                    src={M3}
+                                    title="College Publicity"
+                                    text="A campus ambassador also aids in publicising Techkriti and ensuring campus community participation."
 
 
-                            />
-                            <CardItem
-                                src="https://img.freepik.com/free-vector/marketing-consulting-concept-illustration_114360-9027.jpg?size=626&ext=jpg"
-                                title="Social Media"
-                                text="  Promote Techkriti through the social media platform by publicizing its events on various social media channels like Facebook, Twitter, Instagram"
+                                />
+                                <CardItem
+                                    src={M4}
+                                    title="Social Media"
+                                    text="CAs must also promote Techkriti via the social media platform by advertising its activities on Facebook, Twitter, Instagram, etc., utilizing their social media network for the development of Techkriti'23.
+                                   
+                                    "
 
 
-                            />
-                            <CardItem
-                                src="https://img.freepik.com/free-vector/blogging-illustration-concept_114360-788.jpg?size=626&ext=jpg"
-                                title="Blogs"
-                                text=" Improves his/her writing skills through our blog series, in which he/she may give thoughts about anything for publishing on Techkriti official pages"
+                                />
+                                <CardItem
+                                    src={M1}
+                                    title="Blogs"
+                                    text="A campus ambassador also enhances his/her writing abilities through our blog series, in which he/she can share opinions on any topic for publication on Techkriti's official Facebook, Instagram, Twitter, and other social media applications.
+                                    "
 
-                            />
+                                />
 
-                        </Row>
-                    </AnimationOnScroll>
+                            </Row>
+                        </AnimationOnScroll>
+                    </div>
                 </div>
             </div>
-            </div>
-            </>
+        </>
 
 
     );

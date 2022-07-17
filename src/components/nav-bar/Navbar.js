@@ -28,15 +28,15 @@ function Navbar() {
     return (
         <>
             <nav className='navbar'>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap"></link>
+           
                 <div className='navbar-container'>
                     <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
                     <span class='icon'></span>  
 
                     </Link>
-                    <div className='menu-icon' onClick={handleClick}>
+                    {/* <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? "fas fa-times" : "fas fa-bars"} />
-                    </div>
+                    </div> */}
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
                             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
@@ -45,7 +45,7 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link to="/whyca" className="nav-links" onClick={closeMobileMenu}>
-                                Why CA?
+                                Details
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -59,6 +59,24 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link 
+                                to="/impetus" 
+                                className="nav-links-mobile" 
+                                onClick={closeMobileMenu}
+                            >
+                                Contact
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link 
+                                to="/impetus" 
+                                className="nav-links-mobile" 
+                                onClick={closeMobileMenu}
+                            >
+                                Sponsors
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link 
                                 to="/sign-up" 
                                 className="nav-links-mobile" 
                                 onClick={closeMobileMenu}
@@ -66,6 +84,7 @@ function Navbar() {
                                 Sign Up
                             </Link>
                         </li>
+                        
                     </ul>
                     {button && <Button 
                     buttonStyle='btn--outline'>REGISTER</Button>}

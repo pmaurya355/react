@@ -1,0 +1,41 @@
+body{
+ 
+ background: black;
+}
+.aboutus {
+  padding: 50px  ; 
+}
+
+.title {
+  margin: 0 500px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid grey;
+  width: 7cm;
+  /* text-decoration: 2px underline grey;
+  text-underline-position: under; */
+   /* text-underline-offset: 15px; */
+  letter-spacing: 0.3cm;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text {
+  text-align: justify;
+  line-height: 0.8cm; 
+  font-size: 20px;
+  color: lightgrey;
+  position: relative;
+  margin-left: 30px;  
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+

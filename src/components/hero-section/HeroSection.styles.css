@@ -8,18 +8,19 @@ video {
 
 .hero-container {
   
-  background-image: url('https://st3.depositphotos.com/1071909/19574/i/600/depositphotos_195746314-stock-photo-brand-ambassador-professional.jpg'); 
+  background-image: url('https://ca.techkriti.org/assets/images/flicker.jpg'); 
+  height: 550px;
 
-
-  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ 
 
   /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
-  object-fit: contain;
+ 
 }
 @keyframes example {
   from {margin-top: -50px;}

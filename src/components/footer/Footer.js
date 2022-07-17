@@ -9,7 +9,7 @@ function Footer() {
         <section class='social-media'>
           <div class='social-media-wrap'>
             
-            <small class='website-rights'>Techkriti © 2022</small>
+            <div class='website-rights'>Techkriti © 2022</div>
             <div class='social-icons'>
             <a 
             class='social-icon-link facebook'

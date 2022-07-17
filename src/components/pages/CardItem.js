@@ -1,12 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import "../pages/WhyCa.css"
 
 function CardItem(props) {
   return (
     <>
+     <link rel="stylesheet" href="../pages/WhyCa.css"/> 
       <li className='cards__item'>
            <div id="imagebox">
             <img
+            height={props.height}
+            width={props.width}
               className='cards__item__img'
               alt=''
               src={props.src}
