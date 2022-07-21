@@ -11,7 +11,7 @@ function Home() {
       <HeroSection />
       <AboutUs />
       <Counter />
-      {/* <Testimonials/> */}
+      <Testimonials />
     </>
   );
 }

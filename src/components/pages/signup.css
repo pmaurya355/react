@@ -1,91 +1,294 @@
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* 
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+} */
 
-  .profile {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
-    margin-left: 30px;
-  }
+/* navbar  */
 
-  .register-section {
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+/* .navbarr{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(18, 18, 28);
+    transition: width 200ms ease;
+}
 
-  .cont {
-    width: 65%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%) !important;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .error {
-    color: red;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-
-  .form {
-    width: 50%;
-  }
-
-  form {
-    max-width: 500px;
-    padding: 25px;
-    padding-bottom: 10px;
+.navbar-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    margin: auto;
-  }
+    align-items: center;
+    justify-content: center;
+} */
 
-  .write {
-    padding: 8px;
-    max-width: 100%;
-    border: 2px solid #fff;
-    border-bottom: 2px solid gainsboro;
-    background: #fff;
-    border-radius: 6px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-  }
-
-  .btns {
+/* .logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px 0px;
-  }
+    margin-top: 1rem;
+}
 
-  /* .btn { */
-    /* font-size: 1.5em;
-    padding: 10px 20px;
-    background-color: #5dbd3e;
-    color: white;
-    border: 2px solid white;
-    border-radius: 25px;
-    margin: 10px 0px;
-  } */
+.nav-logo{
+    width: 50%;
+    border-radius: 50%;
+}
 
-  /* .btn:hover {
-    background-color: rgb(16, 90, 16);
-  } */
+.nav-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-  .google {
-    background-color: #189940;
-    text-align: center;
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
     text-decoration: none;
-    padding: 12px 15px;
-    border-radius: 30px;
-    color: white;
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
+    width: max-content;
+    justify-content: center;
+    width: 100%;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 200ms;
+}
 
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+}
+
+.nav-link:hover .nav-icon{
+    color: #4fb3c5;
+}
+
+.link-text{
+    display: none;
+    margin-left: 1.5rem;
+    font-family: 'montserrat';
+}
+
+.navbarr:hover{
+    width: 16rem;
+}
+
+.navbarr:hover .link-text{
+    display: block;
+    /* width: 16rem; */
+
+
+/*.navbarr a{
+    text-decoration: none;
+    color: whitesmoke;
+} */
+
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.profi {
+  background-color: #1c1d21;
+}
+
+.welcome-msg {
+  color: white;
+}
+
+@media only screen and (min-width: 600px){
+    .navbarr{
+        width: 5rem;
+        height: 100vh;
+        position: fixed;
+        background-color: rgb(18, 18, 28);
+        transition: width 200ms ease;
+    }
+
+    .navbarr:hover{
+        width: 16rem;
+    }
+    
+    .navbarr:hover .link-text{
+        display: block;
+        color: aliceblue;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .navbarr{
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .navbarr:hover{
+        width: 100vw;
+    }
+    
+    .navbarr:hover .link-text{
+        display: none;
+        
+    }
+
+    .form-div{
+        margin-bottom: 10rem;
+    }
+
+    
+    main{
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+}
+
+/* main  */
+
+/* header  */
+
+main{
+    padding: 0;
+}
+
+.header{
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-image{
+    padding: 0;
+    display: inline;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image img{
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profile-image .btn{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+/* content  */
+
+.content{
+    /* background-image: url('imgs/back.jpg'); */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/* info  */
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h1{
+    margin-bottom: 4rem;
+    font-family: 'Ubuntu';
+    font-weight: 600;
+}
+
+.info img{
+    border-radius: 50%;
+    padding: 6px;
+    border: 5px solid white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.info i{
+    display: block;
+    margin: 10px 0;
+}
+
+.content .row .row{
+    width: 100%;
+    justify-content: center;
+}
+
+.box{
+    background-color: rgb(250, 2, 134);
+    font-family: 'ubuntu';
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* update  */
+
+.update{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-div{
+    background-color: #1c1d21;
+    margin-top: 5rem;
+    /* margin-bottom: 10rem; */
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    min-height: 50vh;
+    min-width: 40vw;
+}
+
+.form-title{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: #5543ca;
+    font-family: 'Ubuntu';
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-div{
+    text-align: center;
+}
+
+.btn-div .btn{
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    border: none;
+    border-radius: 0px;
+    font-family: 'Montserrat';
+    padding: 0.3rem 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}

@@ -69,7 +69,7 @@ function Navbar() {
                 Contact-us
               </Link>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <Link
                 to="/register"
                 className="nav-links"
@@ -77,7 +77,7 @@ function Navbar() {
               >
                 Register
               </Link>
-            </li> */}
+            </li>
             <li className="nav-item">
               <Link
                 to="/impetus"
@@ -106,7 +106,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">REGISTER</Button>}
+          {/* {button && <Button buttonStyle="btn--outline">REGISTER</Button>} */}
         </div>
       </nav>
     </>

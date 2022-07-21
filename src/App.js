@@ -8,7 +8,7 @@ import WhyCa from "./components/pages/WhyCa";
 import SignUp from "./components/pages/Register";
 import Incentives from "./components/pages/Incentives";
 import Card from "./components/pages/Card";
-// import Register from "./components/pages/Register";
+import Register from "./components/pages/Register";
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/impetus" element={<Impetus />} />
           <Route exact path="/incentives" element={<Incentives />} />
           <Route exact path="/card" element={<Card />} />
-          {/* <Route exact path="/register" element={<Register />} /> */}
+          <Route exact path="/register" element={<Register />} />
           <Route exact path="/whyca" element={<WhyCa />} />
           <Route exact path="/whyca" element={<SignUp />} />
           <Route exact path="/whyca" element={<SignUp />} />
