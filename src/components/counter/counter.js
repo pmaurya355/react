@@ -1,7 +1,7 @@
 import CountUp from 'react-countup';
 import React, { Component }  from 'react';
 import "animate.css/animate.min.css";
-import '../counter/counter.style.css';
+import './Counter.style.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function Counter() {
@@ -12,10 +12,7 @@ function Counter() {
                 <div className='counter'>
                
                     <ul className='counter_item' >
-                    <AnimationOnScroll
               
-              animateOnce={true}
-              animateIn="animate__fadeInUp">
                         <p >Ambassadors</p>
                         <CountUp
                             start={0} end={25000} delay={0}>
@@ -26,16 +23,13 @@ function Counter() {
                                 </div>
                             )}
                         </CountUp>
-                        </AnimationOnScroll>
+                        
 
                     </ul>
                     
 
                     <ul className='counter_item'>
-                    <AnimationOnScroll
-              
-              animateOnce={true}
-              animateIn="animate__fadeInUp">
+                   
                         <p>College</p>
                         <CountUp start={0} end={100} delay={0}>
                             {({ countUpRef }) => (
@@ -45,15 +39,12 @@ function Counter() {
                                 </div>
                             )}
                         </CountUp>
-                        </AnimationOnScroll>
+                       
                     </ul>
                     
 
-                    <ul className='counter_item'>
-                    <AnimationOnScroll
-              
-              animateOnce={true}
-              animateIn="animate__fadeInUp">
+                    <ul className='counter_item_last'>
+                    
                         <p>Reach</p>
                         <CountUp start={0} end={20} delay={0}>
                             {({ countUpRef }) => (
@@ -63,7 +54,7 @@ function Counter() {
                                 </div>
                             )}
                         </CountUp>
-                        </AnimationOnScroll>
+                       
                     </ul>
                   
                 </div>

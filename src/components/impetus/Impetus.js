@@ -1,11 +1,12 @@
 import React from "react";
-import "./incentive.style.css";
+import "./Impetus.style.css";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 export default function incentives() {
   return (
     <>
       <div class="background">
+        
         <div class="box2">
           <i class="fas fa-certificate" aria-hidden="true"></i>
           <p>

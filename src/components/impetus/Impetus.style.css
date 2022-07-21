@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+/* 
 * {
     margin: 0;
     padding: 0;
-}
+} */
 
 .background {
-    background-color: #1C1D21;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -21,7 +18,7 @@
     height: 200px;
     margin: 16px;
     padding: 16px;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: #1C1D21;
     color: #FCFCFF;
     font-weight: 500;
@@ -40,5 +37,5 @@
 
 .box2 i {
     font-size: 2rem;
-    color: #6195FF
+    color: #4fb3c5;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import "./card.css";
-const Card = () => {
+import "./ContactUs.css";
+const ContactUs = () => {
   const persons = [
     {
       name: "Nitish Kumar",
@@ -28,12 +28,12 @@ const Card = () => {
       mob: "+91-9835637958",
     },
     {
-      name: "Prashant Raiger",
+      name: "Sanskar Mittal",
       pos: "HEAD, EVENTS AND COMPETITIONS",
       mob: "+91-9835637958",
     },
     {
-      name: "Nikhil Verma",
+      name: "Anita Waskale",
       pos: "HEAD, EVENTS AND COMPETITIONS",
       mob: "+91-9835637958",
     },
@@ -67,4 +67,4 @@ const Card = () => {
   return <div className="container">{person}</div>;
 };
 
-export default Card;
+export default ContactUs;

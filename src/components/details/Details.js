@@ -1,5 +1,5 @@
 import React from 'react';
-import './WhyCa.css';
+import './Details.style.css';
 import CardItem from './CardItem';
 import { Row } from 'react-bootstrap';
 import "animate.css/animate.min.css";
@@ -21,10 +21,7 @@ function WhyCa() {
        
             <div className='whyca'>
             <link rel="stylesheet" href="./WhyCa.css"/> 
-            <AnimationOnScroll
-
-animateOnce={true}
-animateIn="animate__fadeIn">
+           
                 <h1 class="hr-lines">WHY CA?</h1>
 
                 <div class="grid-container">
@@ -84,7 +81,7 @@ animateIn="animate__fadeIn">
 
                 </div>
 
-                </AnimationOnScroll>
+           
 
             </div>
         

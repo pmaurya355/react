@@ -1,5 +1,5 @@
 import React from 'react';
-import "../pages/WhyCa.css"
+import "./Details.style.css"
 
 function CardItem(props) {
   return (
