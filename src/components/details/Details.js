@@ -101,7 +101,7 @@ function WhyCa() {
                                     src={M2}
                                     title="Coordination"
                                     text='CAs are responsible for collaborating with the numerous participating colleges.
-                                    CAs arrange workshops and activities in their respective colleges with the aid of Techkriti.
+                                    CAs arrange workshops and activities in their respective colleges with the aid of Techkriti
                                    
                                     '
                                 />
@@ -109,14 +109,14 @@ function WhyCa() {
                                 <CardItem
                                     src={M3}
                                     title="College Publicity"
-                                    text="A campus ambassador also aids in publicising Techkriti and ensuring campus community participation."
+                                    text="A campus ambassador also aids in publicising Techkriti and ensuring campus community participation"
 
 
                                 />
                                 <CardItem
                                     src={M4}
                                     title="Social Media"
-                                    text="CAs must also promote Techkriti via the social media platform by advertising its activities on Facebook, Twitter, Instagram, etc., utilizing their social media network for the development of Techkriti'23.
+                                    text="CAs must also promote Techkriti via the social media platform by advertising its activities on Facebook, Twitter, Instagram, etc., utilizing their social media network for the development of Techkriti'23
                                    
                                     "
 
@@ -125,7 +125,7 @@ function WhyCa() {
                                 <CardItem
                                     src={M1}
                                     title="Blogs"
-                                    text="A campus ambassador also enhances his/her writing abilities through our blog series, in which he/she can share opinions on any topic for publication on Techkriti's official Facebook, Instagram, Twitter, and other social media applications.
+                                    text="A campus ambassador also enhances his/her writing abilities through our blog series, in which he/she can share opinions on any topic for publication
                                     "
 
                                 />
